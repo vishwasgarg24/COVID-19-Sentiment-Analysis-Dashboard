@@ -1,1 +1,1 @@
-# -COVID-19-Sentiment-Analysis-Dashboard
+# COVID-19-Sentiment-Analysis-Dashboard
