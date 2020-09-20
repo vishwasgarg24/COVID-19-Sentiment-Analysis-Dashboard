@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Team Info</title>
+
+  <meta charset="utf-8">
+  <title>Team INSIGHT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </script>
+
+  <!-- SOCIAL MEDI LIBRARY!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 0 10px;
+    }
+
+    /* Remove extra left and right margins, due to padding */
+    .row {
+      margin: 0 -5px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+
+    .avatar {
+      vertical-align: middle;
+      width: 100px;
+      height: 300px;
+      border-radius: 50%;
+    }
+
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: auto;
+    }
+
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .footer {
+      left: 0;
+      bottom: 0;
+      padding: 2px;
+      width: 100%;
+      background-color: rgb(54, 54, 204);
+      color: white;
+      text-align: center;
+      font-size: x-large;
+    }
+  </style>
+</head>
+
+<body style="background-color :#f8fcfd">
+  <nav class="navbar navbar-expand-lg .navbar-dark" style="background-color:rgb(54, 54, 204) ;">
+    <a class="navbar-brand" style="padding-left: 20px; color: white;" href="/">𝕀ℕ𝕊𝕀𝔾ℍ𝕋</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active text-light">
+          <a class="nav-link" href="/" style="padding-left: 20px; color: white;">HOME <span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" style="padding-left: 20px; color: white;" id="navbarDropdown"
+            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            DASHBOARD
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="Confirmed Cases">Corona Confirmed Cases</a>
+            <a class="dropdown-item" href="Deaths Cases">Corona Death Cases</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="Dashboard1">Sentiment Analysis Dashboard 1</a>
+            <a class="dropdown-item" href="Dashboard2">Sentiment Analysis Dashboard 2</a>
+          </div>
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="project" style="padding-left: 20px; color: white;">PROJECT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="team" style="padding-left: 20px; color: white;">TEAM INFO</a>
+        </li>
+        </li>
+      </ul>
+      <div>
+
+        <button class=" btn btn-warning" data-toggle="modal" style="padding-left: 10px;" data-target="#myModal">LOGIN /
+          SIGN UP </button>
+
+        <br>
+
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">LOGIN</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+
+                <!--  form sign in vaala   </!-->
+                <form action="/action_page.php">
+                  <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" placeholder="Enter email" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                  </div>
+                  <div class="form-group form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox"> Remember me
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <br>
+                  <div>
+
+                    <hr>
+                    <button type="button" class="btn btn-outline-primary float-right">SIGN UP NOW</button>
+                  </div>
+
+              </div>
+  </nav>
+
+  </header>
+
+  <h1 style="font-style:italic">Alone we can do so little, together we can do so much.</h1>
+  <img src="https://www.cybersecurity-insiders.com/wp-content/uploads/2017/07/Team.png">
+
+  <div class="row">
+    <div class="column">
+      <div class="card" style="background-color :#bce1ea;">
+        <img
+          src="{{ url_for('static', filename='Sakshi.jpg') }}"
+          alt="sakshi" style="width:100%" class="avatar">
+        <h2>Sakshi Agarwal</h2>
+        <p class="title">Team Leader</p>
+        <p>sakshi.agrawal8800@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card" style="background-color :#bce1ea;">
+        <img
+          src="https://media-exp1.licdn.com/dms/image/C5103AQE_Rv4kf4_Okg/profile-displayphoto-shrink_200_200/0?e=1599091200&v=beta&t=H7FFP3nspNIP7dUYmI3mZZsDH0PD5FFOqPMdSAY9_HQ"
+          alt="kuldeep" style="width:100%" class="avatar">
+        <h2>Kuldeep Singh</h2>
+        <p class="title">Member</p>
+        <p>kuldeep.1822it1075@kiet.edu</p>
+        <p><button class="button">Contact</button></p>
+
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card" style="background-color :#bce1ea;">
+        <img
+          src="https://media-exp1.licdn.com/dms/image/C4E03AQFZZwDhO8UDcA/profile-displayphoto-shrink_200_200/0?e=1599091200&v=beta&t=igQDptg6tIFbUnI91gcmL9gPl5fACHxOCtaQ-NwyE6U"
+          alt="vishwas" style="width:100%" class="avatar">
+        <h2>Vishwas Garg</h2>
+        <p class="title">Member</p>
+        <p>vishwas.1822ei1030@kiet.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card" style="background-color :#bce1ea;">
+        <img src="{{ url_for('static', filename='vishal.jpg') }}" alt="Vishal" style="width:100%" class="avatar">
+        <h2>Vishal Garg</h2>
+        <p class="title">Member</p>
+        <p>vishal.1822ec1173@kiet.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <h1 style="font-size: large;">© 2020 Copyright:Team INSIGHT - All Rights Reserved</h1>
+  </div>
+
+</body>
+
+</html>
