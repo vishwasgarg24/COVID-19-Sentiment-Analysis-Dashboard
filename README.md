@@ -6,3 +6,6 @@ Sentiment analysis is the interpretation and classification of emotions (positiv
 
 ![covid-19 Tweets Sentiments Analysis](https://github.com/vishwasgarg24/COVID-19-Sentiment-Analysis-Dashboard/blob/master/covid-19%20Tweets%20Sentiments%20Analysis.png)
 
+<h3>Role : Developer, Designer.
+
+<h3>Technologies : HTML, CSS, JS, Python, ML, NLP and Tableau.
